@@ -9,6 +9,7 @@ class ExerciseSchema(BaseModel):
     """
     model_config = ConfigDict(populate_by_name=True)
     
+    id: str 
     title: str
     course_id: str = Field(alias="courseId")
     max_score: int = Field(alias="maxScore")
@@ -65,6 +66,7 @@ class GetExerciseResponseSchema(BaseModel):
     """
     model_config = ConfigDict(populate_by_name=True)
 
+    id: str 
     title: str
     course_id: str = Field(alias="courseId")
     max_score: int = Field(alias="maxScore")
