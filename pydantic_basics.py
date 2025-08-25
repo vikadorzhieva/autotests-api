@@ -119,13 +119,13 @@ course_json_model = CourseSchema.model_validate_json(course_json)
 print('Course JSON model:', course_json_model)
 
 # Инициализируем FileSchema c некорректным url
-try:
-    file = FileSchema(
-        id="file-id",
-        url="localhost",
-        filename="file.png",
-        directory="courses",
-    )
-except ValidationError as error:
-    print(error)
-    print(error.errors())
+# try:
+#     file = FileSchema(
+#         id="file-id",
+#         url="localhost",
+#         filename="file.png",
+#         directory="courses",
+#     )
+# except ValidationError as error:
+#     print(error)
+#     print(error.errors())
